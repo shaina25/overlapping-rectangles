@@ -1,0 +1,12 @@
+t = int(input())
+while(t):
+    x11,y11,x13,y13 = map(int,input().split())
+    x21,y21,x23,y23 = map(int,input().split())
+    
+    if(x11>x23 or x21>x13):
+        print(0)
+    elif(y13>y21 or y23>y11):
+        print(0)
+    else:
+        print(1)
+    t-=1"# overlapping-rectangles" 
